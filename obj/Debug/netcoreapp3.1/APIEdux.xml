@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>APIEdux</name>
+    </assembly>
+    <members>
+        <member name="M:APIEdux.Controllers.LoginController.AuthenticateUser(APIEdux.Domains.Usuario)">
+            <summary>
+            Autentifica o usuario
+            </summary>
+            <param name="login">Objeto para conseguir informações de login</param>
+            <returns>Status code da ação</returns>
+        </member>
+        <member name="M:APIEdux.Controllers.LoginController.GenerateJSONWebToken(APIEdux.Domains.Usuario)">
+            <summary>
+            Gera o token de acesso
+            </summary>
+            <param name="userInfo">Informações de usuário</param>
+            <returns>Token de acesso</returns>
+        </member>
+        <member name="M:APIEdux.Controllers.LoginController.Login(APIEdux.Domains.Usuario)">
+            <summary>
+            Realiza o login do usuario
+            </summary>
+            <param name="login">Objeto para conseguir informações do usuário</param>
+            <returns>Status code do login</returns>
+        </member>
+        <member name="M:APIEdux.Controllers.PerfilController.GetPerfil">
+            <summary>
+            Lista todos os perfís.
+            </summary>
+            <returns>Lista dos perfís cadastrados</returns>
+        </member>
+        <member name="M:APIEdux.Controllers.PerfilController.GetPerfil(System.Int32)">
+            <summary>
+            Procura um perfil específico por ID
+            </summary>
+            <param name="id">ID de pesquisa</param>
+            <returns>Perfil pesquisado</returns>
+        </member>
+        <member name="M:APIEdux.Controllers.PerfilController.PutPerfil(System.Int32,APIEdux.Domains.Perfil)">
+            <summary>
+            Edita um perfil
+            </summary>
+            <param name="id">ID para pesquisar o perfil</param>
+            <param name="perfil">Perfil a ser editado</param>
+            <returns>Resultado da edição</returns>
+        </member>
+        <member name="M:APIEdux.Controllers.PerfilController.PostPerfil(APIEdux.Domains.Perfil)">
+            <summary>
+            Adiciona um perfil
+            </summary>
+            <param name="perfil">Perfil a ser adicionado</param>
+            <returns>Perfil adicionado</returns>
+        </member>
+        <member name="M:APIEdux.Controllers.PerfilController.DeletePerfil(System.Int32)">
+            <summary>
+            Exclui um perfil
+            </summary>
+            <param name="id">ID do perfil para ser excluido</param>
+            <returns>Status code da ação</returns>
+        </member>
+        <member name="M:APIEdux.Controllers.TurmaController.GetTurma">
+            <summary>
+            Lista todas as turmas.
+            </summary>
+            <returns>Lista das turmas cadastrados</returns>
+        </member>
+        <member name="M:APIEdux.Controllers.TurmaController.GetTurma(System.Int32)">
+            <summary>
+            Procura uma Turma específico por ID
+            </summary>
+            <param name="id">ID de pesquisa</param>
+            <returns>Turma pesquisada</returns>
+        </member>
+        <member name="M:APIEdux.Controllers.TurmaController.PutTurma(System.Int32,APIEdux.Domains.Turma)">
+            <summary>
+            Edita uma Turma
+            </summary>
+            <param name="id">ID para pesquisar a Turma</param>
+            <param name="turma">Turma a ser editada</param>
+            <returns>Resultado da edição</returns>
+        </member>
+        <member name="M:APIEdux.Controllers.TurmaController.PostTurma(APIEdux.Domains.Turma)">
+            <summary>
+            Adiciona uma turma
+            </summary>
+            <param name="turma">Turma a ser adicionada</param>
+            <returns>Turma adicionada</returns>
+        </member>
+        <member name="M:APIEdux.Controllers.TurmaController.DeleteTurma(System.Int32)">
+            <summary>
+            Exclui uma turma
+            </summary>
+            <param name="id">ID da turma para ser excluida</param>
+            <returns>Status code da ação</returns>
+        </member>
+        <member name="M:APIEdux.Controllers.UsuarioController.GetUsuario">
+            <summary>
+            Lista todos os usuarios.
+            </summary>
+            <returns>Lista dos usuarios cadastrados</returns>
+        </member>
+        <member name="M:APIEdux.Controllers.UsuarioController.GetUsuario(System.Int32)">
+            <summary>
+            Procura um Usuario específico por ID
+            </summary>
+            <param name="id">ID de pesquisa</param>
+            <returns>Usuario pesquisado</returns>
+        </member>
+        <member name="M:APIEdux.Controllers.UsuarioController.PutUsuario(System.Int32,APIEdux.Domains.Usuario)">
+            <summary>
+            Edita um Usuario
+            </summary>
+            <param name="id">ID para pesquisar o Usuario</param>
+            <param name="usuario">Usuario a ser editado</param>
+            <returns>Resultado da edição</returns>
+        </member>
+        <member name="M:APIEdux.Controllers.UsuarioController.PostUsuario(APIEdux.Domains.Usuario)">
+            <summary>
+            Adiciona um Usuario
+            </summary>
+            <param name="usuario">Usuario a ser adicionado</param>
+            <returns>Usuario adicionado</returns>
+        </member>
+        <member name="M:APIEdux.Controllers.UsuarioController.DeleteUsuario(System.Int32)">
+            <summary>
+            Exclui um Usuario
+            </summary>
+            <param name="id">ID do Usuario para ser excluido</param>
+            <returns>Status code da ação</returns>
+        </member>
+        <member name="M:APIEdux.Repositories.CursoRepository.Adicionar(APIEdux.Domains.Curso)">
+            <summary>
+            Adiciona Novo objeto Curso
+            </summary>
+            <param name="curso"></param>
+        </member>
+        <member name="M:APIEdux.Repositories.CursoRepository.BuscarID(System.Int32)">
+            <summary>
+            Localiza Objeto Curso
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIEdux.Repositories.CursoRepository.Editar(APIEdux.Domains.Curso)">
+            <summary>
+            Edita Objeto Curso
+            </summary>
+            <param name="curso"></param>
+        </member>
+        <member name="M:APIEdux.Repositories.CursoRepository.Excluir(System.Int32)">
+            <summary>
+            Exclui Objeto Curso
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:APIEdux.Repositories.CursoRepository.Listar">
+            <summary>
+            Lista todos os itens do Objeto Curso
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIEdux.Repositories.InstituicaoRepository.Adicionar(APIEdux.Domains.Instituicao)">
+            <summary>
+            Adiciona uma novo Objeto instituição
+            </summary>
+            <param name="instituicao"></param>
+        </member>
+        <member name="M:APIEdux.Repositories.InstituicaoRepository.BuscarID(System.Int32)">
+            <summary>
+            Localiza Objeto Instituição atraves do Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIEdux.Repositories.InstituicaoRepository.Editar(APIEdux.Domains.Instituicao)">
+            <summary>
+            Edita Valores do Objeto Instituiçao
+            </summary>
+            <param name="instituicao"></param>
+        </member>
+        <member name="M:APIEdux.Repositories.InstituicaoRepository.Excluir(System.Int32)">
+            <summary>
+            Exclui valores do Objeto Instituição
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:APIEdux.Repositories.InstituicaoRepository.Listar">
+            <summary>
+            Lista Objeto instituição
+            </summary>
+            <returns>Lista de instituições</returns>
+        </member>
+        <member name="M:APIEdux.Repositories.PerfilRepository.Adicionar(APIEdux.Domains.Perfil)">
+            <summary>
+            Adiciona um tipo perfil
+            </summary>
+            <param name="perfil">Perfil para ser adicionado</param>
+        </member>
+        <member name="M:APIEdux.Repositories.PerfilRepository.BuscarID(System.Int32)">
+            <summary>
+            Busca um tipo perfil por ID
+            </summary>
+            <param name="id">ID para pesquisa</param>
+            <returns>Perfil pesquisado</returns>
+        </member>
+        <member name="M:APIEdux.Repositories.PerfilRepository.Editar(APIEdux.Domains.Perfil)">
+            <summary>
+            Edita um tipo de perfil
+            </summary>
+            <param name="perfil">Perfil a ser editado</param>
+        </member>
+        <member name="M:APIEdux.Repositories.PerfilRepository.Excluir(System.Int32)">
+            <summary>
+            Exclui um perfil
+            </summary>
+            <param name="id">ID do perfil</param>
+        </member>
+        <member name="M:APIEdux.Repositories.PerfilRepository.Listar">
+            <summary>
+            Lista todos os perfís
+            </summary>
+            <returns>Lista dos perfís</returns>
+        </member>
+        <member name="M:APIEdux.Repositories.TurmaRepository.Adicionar(APIEdux.Domains.Turma)">
+            <summary>
+            Adiciona uma Turma
+            </summary>
+            <param name="turma">Turma para ser adicionada</param>
+        </member>
+        <member name="M:APIEdux.Repositories.TurmaRepository.BuscarID(System.Int32)">
+            <summary>
+            Busca uma Turma por ID
+            </summary>
+            <param name="id">ID para pesquisa</param>
+            <returns>Turma pesquisada</returns>
+        </member>
+        <member name="M:APIEdux.Repositories.TurmaRepository.Editar(APIEdux.Domains.Turma)">
+            <summary>
+            Edita uma Turma
+            </summary>
+            <param name="turma">Turma a ser editada</param>
+        </member>
+        <member name="M:APIEdux.Repositories.TurmaRepository.Excluir(System.Int32)">
+            <summary>
+            Exclui uma Turma
+            </summary>
+            <param name="id">ID da Turma</param>
+        </member>
+        <member name="M:APIEdux.Repositories.TurmaRepository.Listar">
+            <summary>
+            Lista todas as turmas
+            </summary>
+            <returns>Lista das turmas </returns>
+        </member>
+        <member name="M:APIEdux.Repositories.UsuarioRepository.Adicionar(APIEdux.Domains.Usuario)">
+            <summary>
+            Adiciona um Usuario
+            </summary>
+            <param name="usuario">Usuario para ser adicionado</param>
+        </member>
+        <member name="M:APIEdux.Repositories.UsuarioRepository.BuscarID(System.Int32)">
+            <summary>
+            Busca um Usuario por ID
+            </summary>
+            <param name="id">ID para pesquisa</param>
+            <returns>Usuario pesquisado</returns>
+        </member>
+        <member name="M:APIEdux.Repositories.UsuarioRepository.Editar(APIEdux.Domains.Usuario)">
+            <summary>
+            Edita um Usuario
+            </summary>
+            <param name="usuario">Usuario a ser editado</param>
+        </member>
+        <member name="M:APIEdux.Repositories.UsuarioRepository.Excluir(System.Int32)">
+            <summary>
+            Exclui um Usuario
+            </summary>
+            <param name="id">ID do Usuario</param>
+        </member>
+        <member name="M:APIEdux.Repositories.UsuarioRepository.Listar">
+            <summary>
+            Lista todos os usuarios
+            </summary>
+            <returns>Lista dos usuarios</returns>
+        </member>
+    </members>
+</doc>
